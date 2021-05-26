@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="script.js" async></script>
+            <link rel="stylesheet" href="style.css">
+            <title>Etch-a-Sketch</title>
+        </head>
+
+        <body>
+            <header>
+                <h1>Etch a Sketch</h1>
+                <div class="info">
+                    <p id="ind">16</p>
+                    <input class="slider" id="scroll" type="range" min="2" max="100" value="16">
+                    <button id="reset" onclick="reset_grid()">Reset</button>
+                    <button id="GreyScale" onclick="mode_definer(1)">Gray Scale</button>
+                    <button id="RGB" onclick="mode_definer(2)">RGB</button>               
+                </div>
+            </header>
+            <div id="container"></div>
+
+        </body>
+    </html>
